@@ -27,6 +27,10 @@ env:
   SCONSFLAGS: production=yes use_mingw=yes verbose=yes warnings=no progress=no d3d12=yes
   CACHE_LIMIT: 4
 
+permissions:
+  contents: write
+  packages: write
+
 jobs:
   windows-builds:
     runs-on: "ubuntu-24.04"
